@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Balizas Sonoras Interactivas: Sistema de orientación urbana inclusivo para personas con discapacidad visual en Bogotá">
+  <title>Balizas Sonoras Interactivas - Presentación Académica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN STICKY -->
+  <nav class="nav" id="navbar">
+    <div class="nav__container">
+      <h1 class="nav__logo">Balizas Sonoras</h1>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item"><a href="#presentacion" class="nav__link">Presentación</a></li>
+        <li class="nav__item"><a href="#contexto" class="nav__link">Contexto</a></li>
+        <li class="nav__item"><a href="#estadisticas" class="nav__link">Estadísticas</a></li>
+        <li class="nav__item"><a href="#etica" class="nav__link">Análisis Ético</a></li>
+        <li class="nav__item"><a href="#conclusiones" class="nav__link">Conclusiones</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN HERO -->
+    <section class="section section--hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h2 class="hero__title">Balizas Sonoras Interactivas en Espacios Públicos</h2>
+        <p class="hero__subtitle">Análisis Contextual y Ético de un Sistema de Orientación Urbana Inclusivo</p>
+        <div class="hero__meta">
+          <p><strong>Universidad Nacional de Colombia</strong> | Facultad de Artes | Diseño Industrial</p>
+          <p>Semestre VI - Fecha de entrega: 18/10/2025</p>
+        </div>
+        <div class="hero__team">
+          <p>María Camila Rodríguez · Juan Pablo Martínez · Andrea Carolina Vargas · Diego Alejandro Hernández</p>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: PRESENTACIÓN DE LA IDEA -->
+    <section class="section section--light" id="presentacion">
+      <div class="container">
+        <h2 class="section__title">Presentación de la Idea</h2>
+        
+        <div class="content-grid">
+          <div class="content-card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="48" height="48">
+                <path fill="#2C3E50" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">¿Qué son las balizas?</h3>
+            <p class="card__text">
+              Dispositivos táctiles instalados estratégicamente en espacios públicos de Bogotá que integran 
+              sensor capacitivo, microcontrolador Arduino/ESP32, altavoz de 5W resistente y panel solar 
+              de 10W con batería reciclable. Carcasa en plástico ABS reciclado con certificación IP65, 
+              instaladas a 120 cm de altura para accesibilidad universal.
+            </p>
+          </div>
+
+          <div class="content-card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="48" height="48">
+                <path fill="#E74C3C" d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Problema de investigación</h3>
+            <p class="card__text">
+              ¿Cómo puede un sistema de balizas sonoras interactivas mejorar la autonomía de navegación 
+              urbana de personas con discapacidad visual en Bogotá, respetando principios de diseño universal, 
+              sostenibilidad y ética de la tecnología asistiva?
+            </p>
+          </div>
+
+          <div class="content-card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="48" height="48">
+                <path fill="#27AE60" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Justificación</h3>
+            <p class="card__text">
+              En Colombia existen 1.948.332 personas con discapacidad visual (62.17% del total de personas 
+              con discapacidad). En Bogotá, 458.088 personas presentan alguna discapacidad, con déficit 
+              crítico en infraestructura accesible. El proyecto se alinea con el Decreto 089/2023 para 
+              alcanzar 80% de accesibilidad en espacio público para 2033.
+            </p>
+          </div>
+        </div>
+
+        <!-- Objetivos específicos -->
+        <div class="objectives">
+          <h3 class="objectives__title">Objetivos Específicos</h3>
+          <div class="objectives__grid">
+            <div class="objective-item">
+              <span class="objective-number">01</span>
+              <p>Diseñar prototipo funcional conforme a NTC-5854 y Ley 1618/2013, validando accesibilidad 
+              táctil/audible en entornos con ruido urbano de 70-80 dB</p>
+            </div>
+            <div class="objective-item">
+              <span class="objective-number">02</span>
+              <p>Mapear 10 ubicaciones estratégicas en Bogotá priorizando zonas de alta afluencia 
+              peatonal (4.2 millones de viajes diarios en transporte público)</p>
+            </div>
+            <div class="objective-item">
+              <span class="objective-number">03</span>
+              <p>Validar usabilidad mediante pruebas con mínimo 15 usuarios con discapacidad visual 
+              en alianza con el Instituto Nacional para Ciegos (INCI)</p>
+            </div>
+            <div class="objective-item">
+              <span class="objective-number">04</span>
+              <p>Documentar proceso de co-creación bajo licencia de código abierto, cumpliendo el 
+              principio "Nada sobre nosotros sin nosotros"</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: ANÁLISIS DE CONTEXTO -->
+    <section class="section section--dark" id="contexto">
+      <div class="container">
+        <h2 class="section__title">Análisis de Contexto</h2>
+
+        <!-- Mapa interactivo de ubicaciones -->
+        <div class="map-section">
+          <h3 class="subsection__title">Ubicaciones Propuestas en Bogotá</h3>
+          <div class="locations-grid">
+            <div class="location-card" data-location="1">
+              <div class="location-header">
+                <span class="location-number">1</span>
+                <h4>Estación Calle 100</h4>
+              </div>
+              <p><strong>Localidad:</strong> Suba (Estrato 4)</p>
+              <p><strong>Usuarios:</strong> 45.000 diarios</p>
+              <p><strong>Características:</strong> Centros comerciales, servicios de salud</p>
+            </div>
+
+            <div class="location-card" data-location="2">
+              <div class="location-header">
+                <span class="location-number">2</span>
+                <h4>Biblioteca Virgilio Barco</h4>
+              </div>
+              <p><strong>Localidad:</strong> Fontibón (Estrato 3)</p>
+              <p><strong>Usuarios:</strong> 8.000 semanales</p>
+              <p><strong>Características:</strong> Espacio cultural, carece de señalización sonora</p>
+            </div>
+
+            <div class="location-card" data-location="3">
+              <div class="location-header">
+                <span class="location-number">3</span>
+                <h4>Cruce Av. Caracas con Calle 72</h4>
+              </div>
+              <p><strong>Localidad:</strong> Chapinero (Estrato 3-4)</p>
+              <p><strong>Usuarios:</strong> 25.000 transeúntes diarios</p>
+              <p><strong>Características:</strong> Alto tráfico vehicular, instituciones educativas</p>
+            </div>
+
+            <div class="location-card" data-location="4">
+              <div class="location-header">
+                <span class="location-number">4</span>
+                <h4>Portal de Suba</h4>
+              </div>
+              <p><strong>Localidad:</strong> Suba</p>
+              <p><strong>Características:</strong> Terminal de TransMilenio, alta afluencia</p>
+            </div>
+
+            <div class="location-card" data-location="5">
+              <div class="location-header">
+                <span class="location-number">5</span>
+                <h4>TransMiCable Manitas</h4>
+              </div>
+              <p><strong>Características:</strong> 142 señales braille implementadas, sin audio interactivo</p>
+            </div>
+
+            <div class="location-card" data-location="6">
+              <div class="location-header">
+                <span class="location-number">6</span>
+                <h4>Hospital Santa Clara</h4>
+              </div>
+              <p><strong>Localidad:</strong> Barrios Unidos</p>
+              <p><strong>Características:</strong> Centro de salud pública</p>
+            </div>
+
+            <div class="location-card" data-location="7">
+              <div class="location-header">
+                <span class="location-number">7</span>
+                <h4>Alcaldía Local Kennedy</h4>
+              </div>
+              <p><strong>Localidad:</strong> Kennedy (Estrato 2-3)</p>
+              <p><strong>Características:</strong> Servicios administrativos</p>
+            </div>
+
+            <div class="location-card" data-location="8">
+              <div class="location-header">
+                <span class="location-number">8</span>
+                <h4>C.C. Gran Estación</h4>
+              </div>
+              <p><strong>Características:</strong> Acceso masivo, integración TransMilenio</p>
+            </div>
+
+            <div class="location-card" data-location="9">
+              <div class="location-header">
+                <span class="location-number">9</span>
+                <h4>Universidad Nacional</h4>
+              </div>
+              <p><strong>Localidad:</strong> Teusaquillo</p>
+              <p><strong>Características:</strong> Ciudad Universitaria, alta población estudiantil</p>
+            </div>
+
+            <div class="location-card" data-location="10">
+              <div class="location-header">
+                <span class="location-number">10</span>
+                <h4>Parque Simón Bolívar</h4>
+              </div>
+              <p><strong>Características:</strong> Espacio recreativo de escala metropolitana</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contexto normativo -->
+        <div class="legal-framework">
+          <h3 class="subsection__title">Marco Legal Colombiano</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2009</span>
+                <h4>Ley 1346</h4>
+                <p>Aprobación de la Convención de la ONU sobre Derechos de las Personas con Discapacidad</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2013</span>
+                <h4>Ley 1618</h4>
+                <p>Garantiza el ejercicio efectivo de derechos de personas con discapacidad. Meta: 80% de 
+                accesibilidad en 10 años</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2016</span>
+                <h4>Sentencia T-269/16</h4>
+                <p>Corte Constitucional establece accesibilidad física como derecho fundamental</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023</span>
+                <h4>Decreto 089</h4>
+                <p>Política Pública de Discapacidad para Bogotá 2023-2034. Meta: 80% accesibilidad 
+                para 2033</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: ESTADÍSTICAS -->
+    <section class="section section--light" id="estadisticas">
+      <div class="container">
+        <h2 class="section__title">Datos Estadísticos y Justificación</h2>
+
+        <!-- Estadísticas clave -->
+        <div class="stats-hero">
+          <div class="stat-box stat-box--primary">
+            <span class="stat-number">1.948.332</span>
+            <p class="stat-label">Personas con discapacidad visual en Colombia</p>
+            <span class="stat-detail">62.17% del total con discapacidad</span>
+          </div>
+          <div class="stat-box stat-box--secondary">
+            <span class="stat-number">458.088</span>
+            <p class="stat-label">Personas con discapacidad en Bogotá</p>
+            <span class="stat-detail">6.41% de la población capitalina</span>
+          </div>
+          <div class="stat-box stat-box--tertiary">
+            <span class="stat-number">284.014</span>
+            <p class="stat-label">Personas con discapacidad visual en Bogotá</p>
+            <span class="stat-detail">Estimado (62% del total)</span>
+          </div>
+        </div>
+
+        <!-- Gráfico de distribución -->
+        <div class="chart-container">
+          <h3 class="chart-title">Distribución de Discapacidad Visual en Bogotá</h3>
+          nvas id="chartDisciscapacidad"></canvas>
+        </div>
+
+        <!-- Gráfico de infraestructura -->
+        <div class="chart-container">
+          <h3 class="chart-title">Estado de Infraestructura Accesible en TransMilenio</h3>
+          nvas id="chartIntInfraestructura"></canvas>
+        </div>
+
+        <!-- Comparativa movilidad -->
+        <div class="mobility-stats">
+          <h3 class="subsection__title">Movilidad en Bogotá - Encuesta 2023</h3>
+          <div class="mobility-grid">
+            <div class="mobility-item">
+              <div class="mobility-icon">🚌</div>
+              <span class="mobility-percent">35%</span>
+              <p>Transporte público</p>
+              <span class="mobility-detail">4.2 millones de viajes/día</span>
+            </div>
+            <div class="mobility-item">
+              <div class="mobility-icon">🚶</div>
+              <span class="mobility-percent">28%</span>
+              <p>A pie</p>
+              <span class="mobility-detail">3.3 millones de viajes/día</span>
+            </div>
+            <div class="mobility-item">
+              <div class="mobility-icon">🚲</div>
+              <span class="mobility-percent">8%</span>
+              <p>Bicicleta</p>
+              <span class="mobility-detail">968.000 viajes/día</span>
+            </div>
+            <div class="mobility-item">
+              <div class="mobility-icon">🚗</div>
+              <span class="mobility-percent">29%</span>
+              <p>Otros modos</p>
+              <span class="mobility-detail">Vehículo particular, moto, taxi</span>
+            </div>
+          </div>
+          <div class="mobility-highlight">
+            <p><strong>70% de viajes en modos sostenibles</strong> (transporte público + pie + bicicleta)</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: ANÁLISIS ÉTICO -->
+    <section class="section section--dark" id="etica">
+      <div class="container">
+        <h2 class="section__title">Análisis Ético</h2>
+
+        <div class="ethics-intro">
+          <p class="lead-text">
+            El proyecto involucra tecnología IoT aplicada a población vulnerable, generando múltiples 
+            dilemas éticos que deben anticiparse y mitigarse conforme a estándares internacionales.
+          </p>
+        </div>
+
+        <!-- Riesgos éticos -->
+        <div class="risks-section">
+          <h3 class="subsection__title">Identificación de Riesgos Éticos</h3>
+          
+          <div class="risk-card risk-card--high">
+            <div class="risk-header">
+              <span class="risk-badge risk-badge--high">RIESGO ALTO</span>
+              <h4>Privacidad y Protección de Datos</h4>
+            </div>
+            <div class="risk-content">
+              <p><strong>Dilema:</strong> Si las balizas registran datos de uso (frecuencia, horarios), 
+              constituye recolección de datos personales indirectos bajo Ley 1581/2012. Patrones recurrentes 
+              pueden revelar rutinas de movilidad, información sensible ante riesgos de discriminación.</p>
+              <p><strong>Pregunta ética:</strong> ¿Es necesario almacenar datos para mejorar el servicio, 
+              o pueden funcionar como dispositivos "tontos" sin registro, sacrificando optimización en 
+              favor de privacidad absoluta?</p>
+            </div>
+          </div>
+
+          <div class="risk-card risk-card--high">
+            <div class="risk-header">
+              <span class="risk-badge risk-badge--high">RIESGO ALTO</span>
+              <h4>Consentimiento y Diseño Participativo</h4>
+            </div>
+            <div class="risk-content">
+              <p><strong>Dilema:</strong> El principio "Nada sobre nosotros sin nosotros" (Ley 1618/2013) 
+              establece obligación de involucrar a personas con discapacidad en todas las fases. Diseñar 
+              "para" sin consulta genuina perpetúa paternalismo y viola autodeterminación.</p>
+              <p><strong>Pregunta ética:</strong> ¿El mensaje de audio es comprensible en ruido urbano 
+              de 75 dB? ¿La altura de 120 cm es localizable por personas de diferentes estaturas y usuarios 
+              de silla de ruedas?</p>
+            </div>
+          </div>
+
+          <div class="risk-card risk-card--medium">
+            <div class="risk-header">
+              <span class="risk-badge risk-badge--medium">RIESGO MEDIO</span>
+              <h4>Equidad y No Discriminación Tecnológica</h4>
+            </div>
+            <div class="risk-content">
+              <p><strong>Dilema:</strong> Riesgo de "solucionismo tecnológico" que sustituye esfuerzos 
+              de accesibilidad estructural del Estado (señalización podotáctil, semáforos sonoros). 
+              Acceso desigual espacial si instalación se concentra en localidades de clase media-alta.</p>
+              <p><strong>Pregunta ética:</strong> ¿Las balizas son complemento a infraestructura accesible 
+              obligatoria, o "parche" temporal que desresponsabiliza al Estado del cumplimiento de 
+              Ley 1618/2013?</p>
+            </div>
+          </div>
+
+          <div class="risk-card risk-card--medium">
+            <div class="risk-header">
+              <span class="risk-badge risk-badge--medium">RIESGO MEDIO-ALTO</span>
+              <h4>Seguridad Física y Funcional</h4>
+            </div>
+            <div class="risk-content">
+              <p><strong>Dilema:</strong> Vandalismo urbano (tasa 15% en Bogotá) genera riesgo de balizas 
+              dañadas que produzcan falsa sensación de seguridad. Información incorrecta puede inducir 
+              decisiones erróneas con consecuencias graves.</p>
+              <p><strong>Pregunta ética:</strong> ¿Quién responde si un usuario sufre accidente por 
+              información incorrecta emitida por la baliza? ¿Universidad, IDU, operador de mantenimiento, 
+              o proveedor de datos?</p>
+            </div>
+          </div>
+
+          <div class="risk-card risk-card--low">
+            <div class="risk-header">
+              <span class="risk-badge risk-badge--low">RIESGO BAJO-MEDIO</span>
+              <h4>Impacto Ambiental y Sostenibilidad</h4>
+            </div>
+            <div class="risk-content">
+              <p><strong>Dilema:</strong> Aunque se declara uso de ABS reciclado y energía solar, el 
+              análisis de ciclo de vida completo debe evaluar huella desde extracción de materiales, 
+              manufactura, operación y disposición final. Riesgo de "greenwashing" sin evidencia cuantificada.</p>
+              <p><strong>Pregunta ética:</strong> ¿Existen alternativas de menor impacto? ¿El mantenimiento 
+              para extender vida útil a 10 años es viable, o el modelo asume obsolescencia programada?</p>
+            </div>
+          </div>
+
+          <div class="risk-card risk-card--medium">
+            <div class="risk-header">
+              <span class="risk-badge risk-badge--medium">RIESGO MEDIO</span>
+              <h4>Responsabilidad y Rendición de Cuentas</h4>
+            </div>
+            <div class="risk-content">
+              <p><strong>Dilema:</strong> Proyectos académicos que generan expectativas en comunidades 
+              vulnerables y luego se abandonan producen frustración y desconfianza institucional. Ausencia 
+              de plan de sostenibilidad post-proyecto.</p>
+              <p><strong>Pregunta ética:</strong> ¿El diseño será código abierto (Creative Commons BY-SA) 
+              o se patentará comercialmente? ¿Qué obligaciones post-entrega asume el grupo?</p>
+            </div>
+          </div>
+
+          <div class="risk-card risk-card--low">
+            <div class="risk-header">
+              <span class="risk-badge risk-badge--low">RIESGO BAJO-MEDIO</span>
+              <h4>Representación y Estigmatización</h4>
+            </div>
+            <div class="risk-content">
+              <p><strong>Dilema:</strong> El tono del audio puede incurrir en comunicación condescendiente 
+              que infantiliza a usuarios o refuerza estereotipo de dependencia. Diseño estético enfrenta 
+              dilema de visibilidad vs. estigmatización.</p>
+              <p><strong>Modelo social de discapacidad:</strong> Las balizas deben eliminar barreras del 
+              entorno sin marcar a usuarios como "diferentes" o "necesitados de ayuda especial".</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estrategias de mitigación (tabla interactiva con tooltip) -->
+        <div class="mitigation-section">
+          <h3 class="subsection__title">Estrategias de Mitigación</h3>
+          <div class="table-responsive">
+            <table class="mitigation-table">
+              <thead>
+                <tr>
+                  <th>Riesgo</th>
+                  <th>Estrategia de Mitigación</th>
+                  <th>Responsable</th>
+                  <th>Indicador</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row" data-tooltip="Sin almacenamiento de datos personales">
+                  <td><strong>Privacidad</strong></td>
+                  <td>Balizas sin registro de usuario: emisión de audio pregrabado sin logging. 
+                  Política de Privacidad accesible (braille + QR con audio).</td>
+                  <td>Ingeniero de Software + Asesor de protección de datos</td>
+                  <td>Auditoría de código verificando ausencia de funciones de logging</td>
+                </tr>
+                <tr class="table-row" data-tooltip="Co-diseño con comunidad">
+                  <td><strong>Participación</strong></td>
+                  <td>Comité Asesor con 5-7 personas con discapacidad visual. 3 sesiones de co-diseño 
+                  (prototipado, usabilidad, validación audio). Compensación económica $50.000/sesión.</td>
+                  <td>Coordinador + Trabajador Social</td>
+                  <td>Actas firmadas, videos autorizados, aprobación de Comité de Ética</td>
+                </tr>
+                <tr class="table-row" data-tooltip="Distribución equitativa">
+                  <td><strong>Equidad espacial</strong></td>
+                  <td>50% de balizas en estratos 1-2. Prioridad: hospitales públicos, alcaldías locales, 
+                  bibliotecas. Audio multilingüe: español + inglés básico.</td>
+                  <td>Equipo completo + Asesor de inclusión</td>
+                  <td>Mapa de cobertura por estratos, análisis de accesibilidad en radio de 500m</td>
+                </tr>
+                <tr class="table-row" data-tooltip="Mantenimiento preventivo">
+                  <td><strong>Seguridad</strong></td>
+                  <td>Protocolo mensual: limpieza panel solar, prueba sensor, medición volumen (≥85 dB). 
+                  Número de reporte visible. Integración API TransMilenio para tiempo real.</td>
+                  <td>Ingeniero Hardware + Diseñador Industrial</td>
+                  <td>Test con 15 usuarios: localización ≥80%, comprensión ≥90%, satisfacción ≥7/10</td>
+                </tr>
+                <tr class="table-row" data-tooltip="Análisis de ciclo de vida">
+                  <td><strong>Ambiental</strong></td>
+                  <td>ACV simplificado (ISO 14040). ABS con ≥50% reciclado post-consumo (certificación GRS). 
+                  Baterías LiFePO4 (8 años). Cláusula de reciclaje con fabricante.</td>
+                  <td>Estudiante Ing. Ambiental + Asesor sostenibilidad</td>
+                  <td>Documento ACV, certificados de materiales, cláusula contractual de reciclaje</td>
+                </tr>
+                <tr class="table-row" data-tooltip="Transferencia tecnológica">
+                  <td><strong>Responsabilidad</strong></td>
+                  <td>Alianza con INCI/SecMovilidad para transferencia. Documentación técnica exhaustiva. 
+                  Licencia código abierto: Hardware CERN v2.0, Software GNU GPL v3, CC BY-SA 4.0.</td>
+                  <td>Coordinador + Gestor transferencia</td>
+                  <td>Carta intención firmada, repositorio GitHub con ≥50 descargas, satisfacción ≥8/10</td>
+                </tr>
+                <tr class="table-row" data-tooltip="Lenguaje respetuoso">
+                  <td><strong>Representación</strong></td>
+                  <td>Guiones validados con Comité Asesor: lenguaje person-first, tono neutral, 
+                  instrucciones ≤20 seg. Diseño estético integrado con símbolo accesibilidad discreto.</td>
+                  <td>Comité Asesor + Diseñador + Comunicador</td>
+                  <td>Acta de validación de guiones, diseño no estigmatizante ≥80%, comprensión ≥90%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Declaración de compromiso -->
+        <div class="commitment-box">
+          <h3 class="commitment-title">Declaración de Compromiso Ético</h3>
+          <p>
+            Nos comprometemos a conducir este proyecto bajo los principios de <strong>respeto a la 
+            dignidad humana</strong>, <strong>participación significativa</strong> de la comunidad 
+            con discapacidad visual como co-diseñadores, <strong>transparencia</strong> en comunicación, 
+            <strong>responsabilidad</strong> en gestión de dilemas éticos, y <strong>justicia 
+            distributiva</strong> priorizando población de estratos 1-2. Reconocemos que la tecnología 
+            asistiva debe empoderar, no paternalizar, facilitando el ejercicio del derecho a la 
+            accesibilidad universal consagrado en la Ley 1618 de 2013, la Convención de la ONU y la 
+            Sentencia T-269/16.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: CONCLUSIONES -->
+    <section class="section section--light" id="conclusiones">
+      <div class="container">
+        <h2 class="section__title">Conclusiones y Perspectivas</h2>
+
+        <div class="conclusions-grid">
+          <div class="conclusion-card">
+            <span class="conclusion-number">01</span>
+            <h3>Viabilidad Técnica</h3>
+            <p>
+              El sistema de balizas sonoras es técnicamente viable mediante componentes IoT de bajo 
+              costo (ESP32 $5 USD), alimentación solar híbrida y diseño modular. La certificación IP65 
+              garantiza operación en condiciones climáticas de Bogotá (14°C, 75% humedad).
+            </p>
+          </div>
+
+          <div class="conclusion-card">
+            <span class="conclusion-number">02</span>
+            <h3>Necesidad Social Crítica</h3>
+            <p>
+              Con 284.014 personas con discapacidad visual en Bogotá y déficit estructural en 
+              infraestructura accesible (TransMilenio reporta deficiencias críticas), el proyecto 
+              responde a una brecha urgente para garantizar autonomía de movilidad urbana.
+            </p>
+          </div>
+
+          <div class="conclusion-card">
+            <span class="conclusion-number">03</span>
+            <h3>Imperativo Ético</h3>
+            <p>
+              La mitigación de 7 riesgos éticos identificados (privacidad, consentimiento, equidad, 
+              seguridad, sostenibilidad, responsabilidad, representación) es esencial para evitar 
+              paternalismo tecnológico y garantizar co-creación genuina con la comunidad.
+            </p>
+          </div>
+
+          <div class="conclusion-card">
+            <span class="conclusion-number">04</span>
+            <h3>Modelo Replicable</h3>
+            <p>
+              La documentación bajo licencias abiertas (CERN v2.0, GNU GPL v3, CC BY-SA 4.0) y la 
+              metodología participativa permiten escalamiento a otras ciudades colombianas, 
+              democratizando acceso a tecnología asistiva.
+            </p>
+          </div>
+
+          <div class="conclusion-card">
+            <span class="conclusion-number">05</span>
+            <h3>Complementariedad Normativa</h3>
+            <p>
+              Las balizas no sustituyen obligaciones estatales (rampas, podotáctiles, semáforos sonoros) 
+              sino que complementan infraestructura accesible, acelerando cumplimiento de meta del 
+              Decreto 089/2023: 80% accesibilidad para 2033.
+            </p>
+          </div>
+
+          <div class="conclusion-card">
+            <span class="conclusion-number">06</span>
+            <h3>Sostenibilidad Ambiental</h3>
+            <p>
+              El análisis de ciclo de vida (ACV ISO 14040) con materiales certificados (ABS ≥50% reciclado, 
+              baterías LiFePO4 8 años) y protocolo de reciclaje al final de vida útil garantiza 
+              coherencia con Agenda 2030 ODS 11 (Ciudades Sostenibles).
+            </p>
+          </div>
+        </div>
+
+        <!-- Próximos pasos -->
+        <div class="next-steps">
+          <h3 class="subsection__title">Próximos Pasos</h3>
+          <div class="steps-timeline">
+            <div class="step-item">
+              <div class="step-marker">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="#fff" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h4>Mes 1-2</h4>
+                <p>Conformación de Comité Asesor Comunitario (5-7 personas con discapacidad visual). 
+                Aprobación de Comité de Ética de la Universidad Nacional (30 días)</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-marker">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  ircle cx="12" cy="12" r="10" fill="none" stroke="#fffff" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h4>Mes 3-4</h4>
+                <p>Desarrollo de prototipo funcional. Sesiones de co-diseño participativo: prototipado 
+                conceptual, prueba de usabilidad en laboratorio, validación de mensajes de audio</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-marker">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  ircle cx="12" cy="12" r="10" fill="none"e" stroke="#fff" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h4>Mes 5</h4>
+                <p>Pruebas de campo con 15 usuarios (5 ceguera total, 5 baja visión, 5 adultos mayores). 
+                Validación de localización ≥80%, comprensión ≥90%, satisfacción ≥7/10</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-marker">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  ircle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-e-width="2"/>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h4>Mes 6</h4>
+                <p>Transferencia a institución pública (INCI/Secretaría de Movilidad). Publicación de 
+                repositorio GitHub con documentación técnica completa bajo licencias abiertas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3>Universidad Nacional de Colombia</h3>
+          <p>Facultad de Artes - Departamento de Diseño</p>
+          <p>Programa de Diseño Industrial - Semestre VI</p>
+        </div>
+        <div class="footer__section">
+          <h3>Equipo de Trabajo</h3>
+          <p>María Camila Rodríguez Gómez - 202110045</p>
+          <p>Juan Pablo Martínez Silva - 202110087</p>
+          <p>Andrea Carolina Vargas Torres - 202110132</p>
+          <p>Diego Alejandro Hernández Ruiz - 202110156</p>
+        </div>
+        <div class="footer__section">
+          <h3>Proyecto</h3>
+          <p>Balizas Sonoras Interactivas</p>
+          <p>Fecha de entrega: 18 de octubre de 2025</p>
+          <p>Licencia: Creative Commons BY-SA 4.0</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Universidad Nacional de Colombia. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
